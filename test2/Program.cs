@@ -16,7 +16,7 @@ namespace test2
             CreateWebHostBuilder(args)
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://localhost:80")
+                .UseUrls("http://localhost:1234")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build().Run();
